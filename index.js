@@ -201,6 +201,26 @@
 // Begin17◦
 // . Даны три точки A, B, C на числовой оси. Найти длины отрезков AC и BC и их сумму.
 
-const lengthsOfSegment =(a,b,c) => Math.abs(x2 - x1)
+// const lengthsOfAc = (a, c) => Math.abs(c - a);
 
-const getSum
+// const lengthsOfBc = (b, c) => Math.abs(c - b);
+
+// function getSum() {
+//   lengthsOfAc + lengthsOfBc;
+// }
+
+// // // <-----------------------------------------NEW TASK----------------------------------------->
+// Begin18◦
+// . Даны три точки A, B, C на числовой оси. Точка C расположена
+// между точками A и B. Найти произведение длин отрезков AC и BC.
+
+// const lengthsOfAc = (a, c) => Math.abs(c - a);
+
+// const lengthsOfBc = (b, c) => Math.abs(c - b);
+// const multiplay = () => lengthsOfAc * lengthsOfBc;
+
+// // // <-----------------------------------------NEW TASK----------------------------------------->
+// Begin19◦
+// . Даны координаты двух противоположных вершин прямоугольника:
+// (x1, y1), (x2, y2). Стороны прямоугольника параллельны осям координат.
+// Найти периметр и площадь данного прямоугольника.
