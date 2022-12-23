@@ -5,6 +5,7 @@
 // password - пароль має містити не тільки цифри і залежно від довжини символів показувати юзеру
 // (4 - слабкий, до 8 - хороший, від 12 надійний) 4 - мінімум, 15 - максимум.
 // Якщо юзер ввів усе правильно вивести сповіщення про успішну реєстрацію
+const database = { users: [] };
 
 function userRegistration(email, password) {
   const matchedEmail =
@@ -29,7 +30,7 @@ function userRegistration(email, password) {
 
     switch (true) {
       case passwordLengh < 8:
-        passwordLevel = "слабки";
+        passwordLevel = "слабкий";
         break;
       case passwordLengh >= 8 && passwordLengh < 12:
         passwordLevel = "хороший";
@@ -44,14 +45,24 @@ function userRegistration(email, password) {
   }
   if (matchedEmail && matchedPassword) {
     console.info(`Success registration, you created ${passwordLevel} password`);
+    const name = email.slice(0, email.indexOf("@"));
+    database.users.push({ login: email, password, name });
   } else if (!matchedEmail) {
     console.warn(`Bad email`);
   } else if (!matchedPassword) {
-    console.warn(`Bad pawword:`, passwordMsg);
+    console.warn(`Bad passwword:`, passwordMsg);
   }
 }
 
 console.log(
   "userRegistration: ",
-  userRegistration("rus@gmail.com", "parol2021")
+  userRegistration("ruslan@gmail.com", "parol2022")
 );
+console.log(database.users);
+
+// // // <-----------------------------------------NEW TASK----------------------------------------->
+// В тебе є база даних
+// Сутність юзера
+// login - це його email
+// password - це пароль
+// name - це частина пошти до @gmail.com, @ukr.net

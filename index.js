@@ -144,23 +144,24 @@
 // радиус которого равен R1, а внутренний радиус равен R2:S1 = π·(R1)2, S2 = π·(R2)2, S3 = S1 − S2.
 
 // const p = 3.14;
-// let getSquareS1;
-// let getSquareS2;
-// let getSquareS3 = getSquareS1 - getSquareS2;
 
 // function getSquare(radius1, radius2) {
 //   if (radius1 > radius2) {
-//     getSquareS1 = p * radius1 ** 2;
-//   } else if (radius1 < radius2) {
-//     getSquare2 = p * radius2 ** 2;
+//     const getSquareS1 = p * radius1 ** 2;
+//     const getSquareS2 = p * radius2 ** 2;
+//     const getSquareS3 = getSquareS1 - getSquareS2;
+//     return { getSquareS1, getSquareS2, getSquareS3 };
+//   } else {
+//     console.log("Radius1 > Radius2");
 //   }
 // }
-// const s1 = p * r1 ** 2;
-// const s2 = p * r2 ** 2;
-// return { s1, s2, s3: s1 - s2 };
+// console.log("getSquare: ", getSquare(5, 3));
+
 // // // <-----------------------------------------NEW TASK----------------------------------------->
 // Begin14◦
 // . Дана длина L окружности. Найти ее радиус R и площадь S круга,
 // ограниченного этой окружностью, учитывая, что L = 2·π·R, S = π·R2. Вкачестве значения π использовать 3.14.
 // let length = 0;
 // const p = 3.14;
+
+// const getRadius = () => {};
