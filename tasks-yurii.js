@@ -7,14 +7,51 @@
 // Якщо юзер ввів усе правильно вивести сповіщення про успішну реєстрацію
 
 function userRegistration(email, password) {
-    const matchedEmail = email && (email.includes(@gmail.com) || email.includes(@ukr.net));
+  const matchedEmail =
+    email && (email.includes("@gmail.com") || email.includes("@ukr.net"));
+  console.assert(
+    matchedEmail,
+    "Реєстрація підтримує пошту @gmail.com, @ukr.net"
+  );
+  const passwordLengh = password.length;
 
+  let passwordMsg;
+  let passwordLevel;
+  let matchedPassword;
 
-    const matchedPassword 
-      if (password.length >= 4) { console.log("слабкий") },
-      else if (password.length >= 4 && password.length <= 8) { console.log("хороший") }
-      else (password.length >= 12 || password.length <= 15){console.log("надійний")}
+  if (
+    passwordLengh &&
+    passwordLengh >= 4 &&
+    passwordLengh <= 15 &&
+    !Number(password)
+  ) {
+    matchedPassword = true;
+
+    switch (true) {
+      case passwordLengh < 8:
+        passwordLevel = "слабки";
+        break;
+      case passwordLengh >= 8 && passwordLengh < 12:
+        passwordLevel = "хороший";
+        break;
+      case passwordLengh >= 12:
+        passwordLevel = "надійний";
+        break;
     }
+  } else {
+    passwordMsg =
+      "Пароль має складатись 4-15 символів та містити не тільки цифри";
+  }
+  if (matchedEmail && matchedPassword) {
+    console.info(`Success registration, you created ${passwordLevel} password`);
+  } else if (!matchedEmail) {
+    console.warn(`Bad email`);
+  } else if (!matchedPassword) {
+    console.warn(`Bad pawword:`, passwordMsg);
+  }
+}
 
-
-// console.log("userRegistration: ", userRegistration());
+console.log(
+  "userRegistration: ",
+  userRegistration("rus@gmail.com", "parol2021")
+);
