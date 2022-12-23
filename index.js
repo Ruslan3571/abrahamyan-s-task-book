@@ -164,4 +164,43 @@
 // let length = 0;
 // const p = 3.14;
 
-// const getRadius = () => {};
+// const getRadius = (radius) => 2 * p * radius;
+// console.log("getRadius: ", getRadius(2));
+// const getSquare = (radius) => p * radius ** 2;
+// console.log("getSquare: ", getSquare(3));
+
+// // // <-----------------------------------------NEW TASK----------------------------------------->
+// Begin15◦
+// . Дана площадь S круга. Найти его диаметр D и длину L окружности,
+// ограничивающей этот круг, учитывая, что L = 2·π·R, S = π·R2. В качествезначения π использовать 3.14.
+// const p = 3.14;
+// let square;
+
+// function getRadius(square) {
+//   return Math.sqrt(square / p);
+// }
+
+// function getDiametr(sq) {
+//   return getRadius(sq) * 2;
+// }
+
+// function getLength(getRadius) {
+//   return 2 * p * getRadius;
+// }
+// console.log(getRadius(2));
+// console.log(getDiametr(2));
+// console.log(getLength(2));
+
+// // // <-----------------------------------------NEW TASK----------------------------------------->
+// Begin16◦
+// . Найти расстояние между двумя точками с заданными координатами x1 и x2 на числовой оси: |x2 − x1|
+
+// const getDistance = (x1, x2) => Math.abs(x2 - x1);
+
+// // // <-----------------------------------------NEW TASK----------------------------------------->
+// Begin17◦
+// . Даны три точки A, B, C на числовой оси. Найти длины отрезков AC и BC и их сумму.
+
+const lengthsOfSegment =(a,b,c) => Math.abs(x2 - x1)
+
+const getSum
