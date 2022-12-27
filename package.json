@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -16,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/Ruslan3571/abrahamyan-s-task-book/issues"
   },
-  "homepage": "https://github.com/Ruslan3571/abrahamyan-s-task-book#readme",
-  "dependencies": {
-    "validator": "^1.0.0"
-  }
+  "homepage": "https://github.com/Ruslan3571/abrahamyan-s-task-book#readme"
 }
