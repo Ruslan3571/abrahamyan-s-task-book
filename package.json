@@ -1,0 +1,23 @@
+{
+  "name": "abrahamyan-s-task-book",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ruslan3571/abrahamyan-s-task-book.git"
+  },
+  "keywords": [],
+  "author": "Ruslan Formanchuk <ruslan12032@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ruslan3571/abrahamyan-s-task-book/issues"
+  },
+  "homepage": "https://github.com/Ruslan3571/abrahamyan-s-task-book#readme",
+  "dependencies": {
+    "validator": "^1.0.0"
+  }
+}
