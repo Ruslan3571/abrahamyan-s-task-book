@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Ruslan3571/abrahamyan-s-task-book/issues"
   },
-  "homepage": "https://github.com/Ruslan3571/abrahamyan-s-task-book#readme"
+  "homepage": "https://github.com/Ruslan3571/abrahamyan-s-task-book#readme",
+  "dependencies": {
+    "moment": "^2.29.4"
+  }
 }
